@@ -16,6 +16,6 @@ conda install python=3.7.9
 
 pip install -r requirements.txt
 
-ПРИМЕР ЗАПУСКА
+ПРИМЕР ЗАПУСКА ПРОЕКТА
 
 detect.py --input путь_к_видео_для_обработки/видео.mkv --output путь_к_папке_для_сохранения
