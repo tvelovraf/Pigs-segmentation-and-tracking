@@ -1,0 +1,7 @@
+numpy
+filterpy==1.4.5
+scikit-image==0.17.2
+lap==0.4.0
+albumentations==1.1.0
+segmentation-models-pytorch
+matplotlib
