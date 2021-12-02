@@ -87,8 +87,6 @@ def detect(save_img=False):
     weights_segmentation = './segmentation.pth'
     iou_thres = 0.5
 
-
-    print(torch.cuda.is_available())
     # Initialize
     device = select_device('0')
     if os.path.exists(out):
