@@ -1,21 +1,48 @@
-ОПИСАНИЕ
+# Intro
 
-Файл для запуска алгоритма - detect.py. 
-В качестве двух аргументов используются:
---source путь к тестовому видео;
---output путь для сохранения результата (по умолчанию создаётся папка ./inference/output/ в корне).
+Решение задачи сегментации, трекинга и оценки активности поросят командой **svinkotrack** в рамках хакатона [AgroHack Code](https://agro-code.ru/hack/task/digital-farm/).  
 
-Результат сохраняется в виде видео с наложенными боксами, масками, номерами и активностью животных, их количеством для каждого кадра
+**Пробный запуск** можно осуществить на [**Google Colab**](https://colab.research.google.com/drive/1-D7cfnjwPrFF92_6qwfvWCrWFpW7JSuT?usp=sharing#scrollTo=AQEXOi6-twGA)
 
-УСТАНОВКА ПАКЕТОВ
+## Installation guide
 
-conda create --name название_окружения 
+Предполагается наличие установленной Anaconda. 
 
-conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+Клонируем репозиторий:
+```bash
+git clone https://github.com/tvelovraf/Pigs-segmentation-and-tracking.git
+cd Pigs-segmentation-and-tracking
+```
+
+### Установка пакетов
+
+Создаём и активируем новое окружение:
+
+```bash
+conda create --name <envname>  
+conda activate <envname> 
+```
+Устанавливаем `Python` и необходимые библиотеки:
+```bash
 conda install python=3.7.9
-
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+``` 
+Устанавливаем зависимости из `requirements.txt`:
+```bash
 pip install -r requirements.txt
+```
 
-ПРИМЕР ЗАПУСКА ПРОЕКТА
+Теперь проект готов к запуску.
 
-detect.py --source путь_к_видео_для_обработки/видео.mkv --output путь_к_папке_для_сохранения
+### Запуск
+Файл для запуска проекта — `detect.py`.  
+В качестве двух аргументов используются:  
+* `--source <path/to/test_video>` путь к тестовому видео;  
+* `--output <path/to/inference/>` путь к директории для сохранения результата (по умолчанию создаётся папка `./inference/output/` в корне).
+
+Запускаем проект для тестового видео `test_cut.mp4`:
+```bash
+python detect.py --source test_cut.mp4 --output ./inference/output
+```
+
+Результат сохраняется в виде видео с наложенными боксами, масками, номерами, активностью животных и их количеством для текущего кадра. Также сохраняется картинка `activity.png` с графиком активностей свиней за всё время.
