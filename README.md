@@ -25,7 +25,7 @@ conda activate <envname>
 Устанавливаем `Python` и необходимые библиотеки:
 ```bash
 conda install python=3.7.9
-conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+conda install pytorch torchvision cudatoolkit=11.3 -c pytorch
 ``` 
 Устанавливаем зависимости из `requirements.txt`:
 ```bash
