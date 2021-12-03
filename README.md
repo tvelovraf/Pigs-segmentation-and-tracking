@@ -48,8 +48,8 @@ python detect.py --source test_cut.mp4 --output ./inference/output
 Результат сохраняется в виде видео с наложенными боксами, масками, номерами, активностью животных и их количеством для текущего кадра. Также сохраняется картинка `activity.png` с графиком активностей свиней за всё время.
 
 ## Пример результата работы
-<p float="left">
-  <img src="./imgs/Movie_1.gif" width="480" />
-  <img src="./imgs/Movie_2.gif" width="480" /> 
+<p align="center">
+  <img src="./imgs/Movie_1.gif" width="600" />
+  <img src="./imgs/Movie_2.gif" width="600" /> 
 </p>
 
