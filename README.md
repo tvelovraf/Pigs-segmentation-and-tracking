@@ -31,6 +31,7 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 ```bash
 pip install -r requirements.txt
 ```
+Скачиваем [**отсюда**](https://drive.google.com/drive/folders/1dtmGsNtqjM_JrNN2PK4Du6YyU7rMFwzV?usp=sharing) веса для детекции и сегментации и кладём их в корень проекта 
 
 Теперь проект готов к запуску.
 
