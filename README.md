@@ -1,4 +1,4 @@
-# Intro
+## Intro
 
 Решение задачи сегментации, трекинга и оценки активности поросят командой **svinkotrack** в рамках хакатона [AgroHack Code](https://agro-code.ru/hack/task/digital-farm/).  
 
