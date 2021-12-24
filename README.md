@@ -31,7 +31,7 @@ conda install pytorch torchvision cudatoolkit=11.3 -c pytorch
 ```bash
 pip install -r requirements.txt
 ```
-Скачиваем [**отсюда**](https://drive.google.com/drive/folders/1dtmGsNtqjM_JrNN2PK4Du6YyU7rMFwzV?usp=sharing) веса для детекции и сегментации и кладём их в корень проекта 
+Скачиваем [**отсюда**](https://drive.google.com/drive/folders/1dtmGsNtqjM_JrNN2PK4Du6YyU7rMFwzV?usp=sharing) веса для детекции и сегментации и кладём их в корень проекта.
 
 Теперь проект готов к запуску.
 
@@ -53,4 +53,8 @@ python detect.py --source test_cut.mp4 --output ./inference/output
   <img src="./imgs/Movie_1.gif" width="600" />
   <img src="./imgs/Movie_2.gif" width="600" /> 
 </p>
+
+## Описание решения
+Тренировочный [датасет](https://drive.google.com/file/d/1SCarmlX0s41bxljIhaH2untP7qSGi2e2/view?usp=sharing) состоял из десяти неразмеченных минутных видео. Прогнав каждый десятый кадр через предобученную [Scaled-YOLOv4](https://github.com/WongKinYiu/ScaledYOLOv4), мы получили предарительную разметку для детекции. Затем доразметили вручную и обучили модель. Трекинг осуществлялся с помощью [SORT](https://github.com/abewley/sort), куда подавались результаты детекции.
+
 
