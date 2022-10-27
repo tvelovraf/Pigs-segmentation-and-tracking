@@ -4,7 +4,7 @@
 
 Для трекигна использовались [Scaled-YOLOv4](https://github.com/WongKinYiu/ScaledYOLOv4) + [SORT](https://github.com/abewley/sort). Сегментация проводилась с помощью FPN из библиотеки [Segmentation Models Pytorch](https://github.com/qubvel/segmentation_models.pytorch) на кропах боксов, полученных из детекции.
 
-**Пробный запуск** можно осуществить на [**Google Colab**](https://colab.research.google.com/drive/1-D7cfnjwPrFF92_6qwfvWCrWFpW7JSuT?usp=sharing#scrollTo=AQEXOi6-twGA)
+**Пробный запуск** можно осуществить на [**Google Colab**](https://colab.research.google.com/drive/1m3mQc-EzMKnUB0r3CUhulxdhGA37nlq2)
 
 ## Установка и запуск
 
@@ -33,7 +33,7 @@ conda install pytorch torchvision cudatoolkit=11.3 -c pytorch
 ```bash
 pip install -r requirements.txt
 ```
-Скачиваем [**отсюда**](https://drive.google.com/drive/folders/1dtmGsNtqjM_JrNN2PK4Du6YyU7rMFwzV?usp=sharing) веса для детекции и сегментации и кладём их в корень проекта.
+Скачиваем [**отсюда**](https://drive.google.com/drive/folders/1Jcx11JEioQcI9vj2HhuIlR7XAmdz-wWa?usp=sharing) веса для детекции и сегментации и кладём их в корень проекта.
 
 Теперь проект готов к запуску.
 
