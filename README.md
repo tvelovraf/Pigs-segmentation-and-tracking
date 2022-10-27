@@ -57,7 +57,7 @@ python detect.py --source test_cut.mp4 --output ./inference/output
 </p>
 
 ## Описание решения
-Тренировочный [датасет](https://drive.google.com/file/d/1SCarmlX0s41bxljIhaH2untP7qSGi2e2/view?usp=sharing) состоял из десяти неразмеченных минутных видео. Прогнав каждый десятый кадр через предобученную [Scaled-YOLOv4](https://github.com/WongKinYiu/ScaledYOLOv4), мы получили предарительную разметку для детекции. Затем доразметили вручную и обучили модель. Трекинг осуществлялся с помощью [SORT](https://github.com/abewley/sort), куда подавались результаты детекции.
+Тренировочный [датасет](https://drive.google.com/file/d/1Al-vfYyNfrXaSj0MwHj9nSkMqPuOkjAC/view?usp=sharing) состоял из десяти неразмеченных минутных видео. Прогнав каждый десятый кадр через предобученную [Scaled-YOLOv4](https://github.com/WongKinYiu/ScaledYOLOv4), мы получили предарительную разметку для детекции. Затем доразметили вручную и обучили модель. Трекинг осуществлялся с помощью [SORT](https://github.com/abewley/sort), куда подавались результаты детекции.
 
 Для сегментации использовалась модель FPN из библиотеки [Segmentation Models Pytorch](https://github.com/qubvel/segmentation_models.pytorch). На вход сегментации подавались кропы полученных после детекции боксов. Процесс обучения происходил итеративно путём доразметки наиболее ошибочных масок.
 
